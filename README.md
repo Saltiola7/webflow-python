@@ -3,7 +3,7 @@
 [![fern shield](https://img.shields.io/badge/%F0%9F%8C%BF-SDK%20generated%20by%20Fern-brightgreen)](https://github.com/fern-api/fern)
 [![pypi](https://img.shields.io/pypi/v/webflow.svg)](https://pypi.python.org/pypi/webflow)
 
-The Webflow Python Library provides convenient access to the [Webflow Data API](https://developers.webflow.com/reference/rest-introduction) from 
+The Webflow Python Library provides convenient access to the [Webflow Data API](https://developers.webflow.com/data/reference/rest-introduction) from 
 applications written in Python. 
 
 The library includes type definitions for all 
@@ -55,12 +55,12 @@ asyncio.run(main())
 
 ## OAuth
 
-To implement OAuth, you'll need to [register a Webflow App in your Workspace](https://developers.webflow.com/reference/authorization)
+To implement OAuth, you'll need to [register a Webflow App in your Workspace](https://developers.webflow.com/data/reference/authentication)
 
 ### Step 1: Authorize URL 
 
 The first step in OAuth is to generate an Authorization URL. Use this URL 
-to fetch your Authorization Code. See the [docs](https://docs.developers.webflow.com/v1.0.0/docs/oauth#user-authorization)
+to fetch your Authorization Code. See the [docs](https://developers.webflow.com/data/reference/oauth-app#2-create-an-authorization-link)
 for more details. 
 
 ```python
@@ -106,7 +106,7 @@ client = Webflow(
 All of the models are nested within the Webflow module. Let IntelliSense 
 guide you! 
 
-![Alt text](assets/module.png)
+![Use IntelliSense to guide API usage](https://raw.githubusercontent.com/webflow/webflow-python/main/assets/module.png)
 
 ## Exception Handling
 All errors thrown by the SDK will be subclasses of [`ApiError`](./src/webflow/core/api_error.py).
